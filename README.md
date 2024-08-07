@@ -1,16 +1,39 @@
-# flutter_web_socket
+# Live Crypto Tracker
 
-A new Flutter project.
+A Flutter application that connects to WebSocket streams to receive live cryptocurrency prices and display the latest price of selected holdings.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Connects to a WebSocket server to receive live data streams.
+- Displays the latest price of selected holdings.
+- Allows users to select and deselect holdings dynamically.
+- Handles WebSocket connection errors and updates the UI accordingly.
+- Optimized for performance and efficient resource management.
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Prerequisites
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter SDK: [Install Flutter](https://flutter.dev/docs/get-started/install)
+- Dart: Comes with Flutter SDK
+- A WebSocket server URL for live data (e.g., a test WebSocket server)
+
+### Setup
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/DharmikPansuriya/flutter-binance-websocket.git
+   cd flutter-binance-websocket
+
+2. Install dependencies:
+   ```sh
+   flutter pub get
+   
+3. Create a .env file in the root directory and add your WebSocket URL:
+   ```sh
+   MASTER_WEBSOCKET_URL=ws://your.websocket.url/{pair}
+
+5. Run the application:
+   ```sh
+   flutter run
